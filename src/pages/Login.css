@@ -1,0 +1,138 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px); /* Adjust for navbar */
+  padding: 2rem;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 900px;
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+  margin: 0 auto;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.login-subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.role-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: #fff;
+}
+
+.role-card:hover {
+  background-color: rgba(16, 185, 129, 0.1);
+  border-color: var(--color-primary);
+  transform: translateY(-5px);
+}
+
+.secure-card:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: var(--color-danger);
+}
+
+.role-icon {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.role-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.role-card p {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-group svg {
+  position: absolute;
+  left: 1rem;
+  color: var(--color-text-muted);
+}
+
+.input-group input {
+  padding-left: 3rem !important;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.google-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.divider span {
+  padding: 0 1rem;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.error-message {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--color-danger);
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  border: 1px solid var(--color-danger);
+}
